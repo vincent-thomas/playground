@@ -5,10 +5,6 @@
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/firebase-cli:2": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/java:1": {},
     "ghcr.io/devcontainers-contrib/features/pnpm:2": {}
   },
   // Features to add to the dev container. More info: https://containers.dev/features.
@@ -17,7 +13,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pnpm install && firebase login && firebase experiments:enable webframeworks",
+  "postCreateCommand": "pnpm install",
 
   // Configure tool-specific properties.
   "customizations": {
